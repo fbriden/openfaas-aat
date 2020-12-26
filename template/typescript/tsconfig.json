@@ -1,0 +1,18 @@
+{
+   /** Based on https://www.npmjs.com/package/@tsconfig/node14 */
+   "$schema": "https://json.schemastore.org/tsconfig",
+   "display": "OpenFaas",
+
+   "compilerOptions": {
+      "lib": ["es2020"],
+      "module": "commonjs",
+      "target": "es2020",
+
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true
+   },
+
+   "exclude": [ "node_modules" ]
+ }

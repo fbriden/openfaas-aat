@@ -1,0 +1,19 @@
+{
+   "name": "openfaas-ts",
+   "version": "0.1.0",
+   "description": "OpenFaaS template for Typescript",
+   "main": "index.ts",
+   "scripts": {
+      "test": "echo \"Error: no tests specified\" && exit 0"
+   },
+   "keywords": [],
+   "author": "Fred Briden",
+   "license": "MIT",
+   "dependencies": {
+      "@types/body-parser": "^1.19.0",
+      "@types/express": "^4.17.9",
+      "@types/node": "^14.14.16",
+      "body-parser": "^1.18.2",
+      "express": "^4.16.2"
+   }
+}
