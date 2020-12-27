@@ -12,38 +12,10 @@ faas-cli template pull https://github.com/fbriden/openfaas-aat
 
 and then follow the instructions for the specific language below
 
-## TypeScript
----
+## Templates Currently Offered
 
-After the templates are installed, you can create a new function with:
 
-```shell
-faas-cli new hello-world --lang typescript
-```
+| Template                            | Runtime | Web Server |
+| ----------------------------------- | ------- | ---------- |
+| [Typescript](./template/typescript) | TS Node | Express    |
 
-handler functions need to have a format like:
-
-```typescript
-import { FnEvent, FnResult } from "./types"
-
-export default async function(event: FnEvent): Promise<FnResult> {
-   // do something
-}
-```
-
-The function result can be a structure like:
-
-```typescript
-   return {
-      message: 'Hello world',
-      status:  202
-   }
-```
-
-a string like:
-
-```typescript
-   return 'Hello world'
-```
-
-or just `null`
